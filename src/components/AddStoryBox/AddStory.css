@@ -1,0 +1,65 @@
+.box-story{
+    margin-top: 4px;
+    background-color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* margin-left: 9px; */
+    display: flex;
+
+    
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+
+    .story{
+        flex: 0 0 auto;
+        scroll-snap-align:center;
+        margin-right: 10px;
+       
+
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 103px;
+        height: 183px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    .addyour{
+        margin-left: 5px;
+        width: 103px;
+        height: 183px;
+        overflow: hidden;
+        position:relative;
+        text-align: center;
+
+        
+        
+        .img{
+            background-image: url("https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/358688074_1938827266497106_4278371578654537135_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGXEEUohdXNG58w6Fvyxhtib7F0ZmB_13dvsXRmYH_Xd26nItW8eA2DGdRTz31IULnuVM4iY9bOHXdqoqUMUYqs&_nc_ohc=HNDOrnVLd0QAX-3LW29&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDAO-GdxKiZDFTpZKQH25FrfmKP8KTjEEbazNnlZHMzqQ&oe=65AC1CFC");
+            background-size: 115% 115%;
+            background-position: center top;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            height: 60%;
+
+        }
+
+        p{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 100%;
+            left: 35px;
+            top:60px;
+            color: rgb(35, 117, 211);
+            font-size: 2rem;
+
+        }   
+    }
+}
+
+
