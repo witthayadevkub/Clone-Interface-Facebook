@@ -1,4 +1,4 @@
-.box-story{
+.boxstory{
     margin-top: 4px;
     background-color: #ffffff;
     padding-top: 8px;
@@ -9,13 +9,15 @@
     
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    /* scroll-snap-type: x mandatory; */
     width: 100%;
+
+    border-bottom: none;
 
     .story{
         flex: 0 0 auto;
-        scroll-snap-align:center;
-        margin-right: 10px;
+        /* scroll-snap-align:start; */
+        margin-right: 7px;
        
 
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -36,6 +38,7 @@
         
         
         .img{
+            background-color: black;
             background-image: url("https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/358688074_1938827266497106_4278371578654537135_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGXEEUohdXNG58w6Fvyxhtib7F0ZmB_13dvsXRmYH_Xd26nItW8eA2DGdRTz31IULnuVM4iY9bOHXdqoqUMUYqs&_nc_ohc=HNDOrnVLd0QAX-3LW29&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDAO-GdxKiZDFTpZKQH25FrfmKP8KTjEEbazNnlZHMzqQ&oe=65AC1CFC");
             background-size: 115% 115%;
             background-position: center top;
@@ -60,6 +63,62 @@
 
         }   
     }
+
+
+
+    .other{
+        position: relative;
+            
+        /* background-color: black; */
+        /* background-image: url('https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/358688074_1938827266497106_4278371578654537135_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGXEEUohdXNG58w6Fvyxhtib7F0ZmB_13dvsXRmYH_Xd26nItW8eA2DGdRTz31IULnuVM4iY9bOHXdqoqUMUYqs&_nc_ohc=HNDOrnVLd0QAX-3LW29&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDAO-GdxKiZDFTpZKQH25FrfmKP8KTjEEbazNnlZHMzqQ&oe=65AC1CFC'); */
+        background-size: cover;
+        background-position: center ;
+
+        .otherimg{
+            z-index: 100;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5); 
+            border: 3px solid #106ea5;
+
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            img{
+            z-index: 110;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+            
+        }
+        }
+        
+        p{
+            position: absolute;
+            z-index: 100;
+            left:7px;
+            bottom: 2px;
+            color: #ffffff;
+            font-size: 12px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    }
+
+    .storyphotoback{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+    }
 }
+
+
 
 
