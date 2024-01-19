@@ -1,0 +1,42 @@
+.postBox{
+    margin-top: 7px;
+   
+
+    i{
+        color:#a4a5a7;
+    }
+
+    .headpost{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+    }
+    }
+
+   
+    .boxpost{
+        height: 469px;
+
+        img{
+           width: 100%; 
+           height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .buttonpost{
+        background-color: #ffffff;
+        display: flex;
+        
+        p{
+            padding-right: 20px;
+        }
+    }
+}

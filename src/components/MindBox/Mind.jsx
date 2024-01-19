@@ -11,7 +11,6 @@ const Mind = () => {
         setMind(e.target.value)
     }
     
-    console.log(mind)
   return (
     <div className="box">
         <div className="img">
