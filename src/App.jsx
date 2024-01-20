@@ -18,15 +18,18 @@ function App() {
   return (
     <DataUser.Provider value={Data}>
 
-        <header>
-          <Navbar/>
-          <Mind/>
-        </header>
-   
-        <section>
-          <AddStory/>
-          <Post/>
-        </section>
+        <div className="size">
+          <header>
+            <Navbar/>
+            <Mind/>
+          </header>
+    
+          <section>
+            <AddStory/>
+            <Post/>
+          </section>
+        </div>
+        
     </DataUser.Provider>
   )
 }
