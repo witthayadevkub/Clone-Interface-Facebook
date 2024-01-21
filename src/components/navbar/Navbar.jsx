@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="topNav">
                     <div className="logo">
                             {/* <h1>facebook</h1> */}
-                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png" alt="" />
+                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png'" alt="" />
                     </div>
 
                         <div className="nav-topleft">
