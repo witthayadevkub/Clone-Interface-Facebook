@@ -1,8 +1,5 @@
-# React + Vite
-https://clone-interface-facebook.vercel.app
-
 # Frontend Project: Facebook Interface Clone (Mobile Responsive)
-
+https://clone-interface-frontend-facebook.vercel.app/
 # Overview:
 # This project aims to replicate the Facebook interface, focusing on mobile responsiveness.
 
