@@ -23,20 +23,6 @@ const Post = () => {
         setSeeMore((check)=> !check)
     }
 
-// const reactions = [
-//   { name: 'like', count: 50 },
-//   { name: 'love', count: 1 },
-//   { name: 'care', count: 9 },
-//   { name: 'haha', count: 0 },
-//   { name: 'wow', count: 8 },
-//   { name: 'sad', count: 0 },
-//   { name: 'angry', count:1  },
-// ];
-
-// // Sort reactions in descending order based on count
-// const sortedReactions = reactions.sort((a, b) => b.count - a.count);
-// console.log(sortedReactions)
-
   return (  
         <div className='postBox'>
             {usersWithPosts.map((post, index) => (
@@ -47,7 +33,7 @@ const Post = () => {
                                 <div className='headpost'>
                                     <img src={post.userphoto} alt={post.name} />
                                     <h3>{post.name}</h3>
-                                    <i class="material-icons">more_horiz</i>
+                                    <i className="material-icons">more_horiz</i>
                                 </div>
                                
                                     {post.textpost&& <div className="textpost">
@@ -71,8 +57,8 @@ const Post = () => {
                                     
 
                                     <div className="layout-emoji">
-                                        {post.reaction?.map(reaction => 
-                                        <div>
+                                        {post.reaction?.map((reaction, index) => 
+                                        <div key={index}>
 
                                         {reaction.count !== 0 && (
                                         <div>

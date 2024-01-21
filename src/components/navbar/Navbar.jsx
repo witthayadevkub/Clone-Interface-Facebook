@@ -90,10 +90,10 @@ const Navbar = () => {
 
                 {alart.community != 0 ? 
                 <div className="box-icon">
-                    <i class="fa-solid fa-users-rectangle" ></i>
+                    <i className="fa-solid fa-users-rectangle" ></i>
                      <p>{alart.community}</p>
                 </div> 
-                : <i class="fa-solid fa-users-rectangle" ></i>}
+                : <i className="fa-solid fa-users-rectangle" ></i>}
                 
             </div>          
         </nav>
