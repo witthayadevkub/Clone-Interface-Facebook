@@ -47,7 +47,7 @@ const Post = () => {
                                 <div className='headpost'>
                                     <img src={post.userphoto} alt={post.name} />
                                     <h3>{post.name}</h3>
-                                    <i class="material-icons">more_horiz</i>
+                                    <i className="material-icons">more_horiz</i>
                                 </div>
                                
                                     {post.textpost&& <div className="textpost">
